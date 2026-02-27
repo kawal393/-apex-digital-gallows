@@ -77,7 +77,7 @@ Non-compliance penalties: €35 million or 7% of global turnover.
 
 **Website**: [digital-gallows.apex-infrastructure.com](#)
 
-**Contact**: [apex@apexdigitalgallows.com](mailto:apex@apexdigitalgallows.com)
+**Contact**: apex.manraj888@gmail.com
 
 ---
 
