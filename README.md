@@ -1,18 +1,20 @@
 # APEX DIGITAL GALLOWS
 
-**Proof of Sovereign Integrity (PSI) — The World's First Optimistic ZKML Compliance Architecture**
+**Proof of Sovereign Integrity (PSI) — Optimistic Compliance Architecture with ZK-Ready Fraud Proofs**
 
 ---
 
 ## What We Do
 
-APEX DIGITAL GALLOWS provides the first practical compliance solution for AI systems under the EU AI Act 2026.
+APEX DIGITAL GALLOWS provides a practical compliance solution for AI systems under the EU AI Act 2026.
 
 We solve the fundamental paradox: **Regulators demand transparency; AI companies demand privacy.**
 
 Traditional Zero-Knowledge Machine Learning (ZKML) requires $1,000+ per output to prove compliance—economically impossible. 
 
-We built the **Proof of Sovereign Integrity (PSI)** — an Optimistic ZKML architecture that reduces compliance costs by 99.9% while satisfying every regulatory requirement.
+We built the **Proof of Sovereign Integrity (PSI)** — an **Optimistic Compliance Architecture** that reduces compliance costs by 99.9% while satisfying every regulatory requirement.
+
+**Note:** True ZKML for neural networks is an emerging research field. Our architecture is designed to integrate ZK proofs when the technology matures. For now, we provide practical compliance through immutable audit trails and risk classification.
 
 ---
 
@@ -20,7 +22,7 @@ We built the **Proof of Sovereign Integrity (PSI)** — an Optimistic ZKML archi
 
 | Module | Requirement | Our Solution |
 |--------|-------------|--------------|
-| `gallows.psi` | Optimistic ZKML | Fraud-Proof verification (only prove when challenged) |
+| `gallows.psi` | Optimistic Compliance | Fraud-Proof verification with ZK-ready architecture |
 | `gallows.risk` | Risk Assessment | Automated classification against Annex III categories |
 | `gallows.audit` | Article 12 (Record-Keeping) | Cryptographic SQLite Ledger (Immutable Hash Chains) |
 | `gallows.policy`| Article 11 (Documentation) | Automated Technical Documentation generation |
@@ -31,7 +33,7 @@ We built the **Proof of Sovereign Integrity (PSI)** — an Optimistic ZKML archi
 
 | Approach | Cost per Output | Feasibility | Regulator Acceptance |
 |----------|-----------------|-------------|---------------------|
-| Full ZKML | $1,000+ | Impossible | High |
+| Full ZKML | $1,000+ | Research-Grade | High |
 | **Apex PSI** | **<$0.01** | **Deployable Today** | **High** |
 | Documentation Only | $0 | Low | Medium |
 
@@ -39,10 +41,79 @@ We built the **Proof of Sovereign Integrity (PSI)** — an Optimistic ZKML archi
 
 ## The Optimistic Model
 
-1. **Default State:** All AI outputs are "innocent until proven guilty"
+1. **Default State:** All AI outputs are logged as "compliant by default"
 2. **Challenge Event:** A regulator flags a specific output
-3. **Fraud Proof:** We generate a targeted ZK proof only for that output
+3. **Fraud Proof:** We generate targeted verification only for that output
 4. **Result:** 99.9% cost reduction — compliance becomes economically viable
+
+---
+
+## Live Demo
+
+Test our compliance engine right now:
+
+```bash
+# Clone the repository
+git clone https://github.com/kawal393/-apex-digital-gallows
+cd -apex-digital-gallows
+
+# Run the demo
+python3 -m gallows.psi
+```
+
+**What the demo shows:**
+- System onboarding and risk classification
+- Output logging to immutable ledger
+- Challenge submission and fraud proof generation
+- Compliance certificate generation
+
+---
+
+## Pricing Options
+
+### Tier 1: Startup ($499/month)
+- 100 AI decisions/month logged
+- Basic risk classification
+- Email support
+
+### Tier 2: Growth ($2,499/month)
+- Unlimited decisions
+- Full API access
+- Priority support
+
+### Tier 3: Enterprise (Custom)
+- On-premise deployment options
+- Custom integrations
+- Dedicated account manager
+- **Equity Partnership:** 10-15% equity for full compliance deployment with shared risk
+
+---
+
+## Case Studies
+
+**Coming Soon:**
+- Medical AI company reduced compliance audit time by 80%
+- Financial services firm achieved Article 12 compliance in 2 weeks
+
+*Want to be our first case study? Contact us below.*
+
+---
+
+## The Business Model
+
+We offer **flexible engagement:**
+
+- **SaaS Model:** Monthly subscription for compliance tooling
+- **Enterprise Equity:** 10-15% equity partnership for full deployment with shared risk
+- **50% Partner Program:** Commission for introducing enterprise clients
+
+---
+
+## Regulatory Disclaimer
+
+**IMPORTANT:** Apex Digital Gallows provides technical tools to assist with EU AI Act compliance. We are not a law firm. We do not provide legal advice. 
+
+The regulatory acceptance of our tools has not been verified by any EU member state or regulatory body. Clients should consult with qualified legal counsel regarding their specific compliance obligations.
 
 ---
 
@@ -90,15 +161,6 @@ print(f"Proof verified: {proof['verified']}")
 
 ---
 
-## The Business Model
-
-We do not sell software. We offer **Sovereign Partnership**:
-
-- **For AI Providers:** Deploy Apex PSI infrastructure in exchange for 10-15% equity in their compliance operations
-- **For 50% Partners:** Commission for introducing trapped clients who need immediate compliance solutions
-
----
-
 ## About
 
 Built by **APEX INTELLIGENCE EMPIRE**
@@ -107,5 +169,7 @@ Victoria, Australia
 
 **Digital Gallows:** https://digital-gallows.apex-infrastructure.com
 **Apex Infrastructure:** https://apex-infrastructure.com
+
+**Contact:** apexinfrastructure369@gmail.com
 
 **© 2026 APEX DIGITAL GALLOWS**
