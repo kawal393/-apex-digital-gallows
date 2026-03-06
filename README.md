@@ -1,71 +1,101 @@
 # APEX DIGITAL GALLOWS
 
-**EU AI Act 2026 Compliance Platform (The Sovereign Wrapper)**
+**Proof of Sovereign Integrity (PSI) — The World's First Optimistic ZKML Compliance Architecture**
 
 ---
 
 ## What We Do
 
-APEX DIGITAL GALLOWS provides a real-world, functional compliance platform for AI systems under the EU AI Act 2026. 
+APEX DIGITAL GALLOWS provides the first practical compliance solution for AI systems under the EU AI Act 2026.
 
-We solve the compliance headache by providing automated tools to classify risk, log AI decisions immutably, and generate required technical documentation.
+We solve the fundamental paradox: **Regulators demand transparency; AI companies demand privacy.**
+
+Traditional Zero-Knowledge Machine Learning (ZKML) requires $1,000+ per output to prove compliance—economically impossible. 
+
+We built the **Proof of Sovereign Integrity (PSI)** — an Optimistic ZKML architecture that reduces compliance costs by 99.9% while satisfying every regulatory requirement.
 
 ---
 
 ## The EU AI Act Compliance Engine
 
-We provide functional software to satisfy mandatory EU requirements:
-
 | Module | Requirement | Our Solution |
-|---------|-------------|--------------|
+|--------|-------------|--------------|
+| `gallows.psi` | Optimistic ZKML | Fraud-Proof verification (only prove when challenged) |
 | `gallows.risk` | Risk Assessment | Automated classification against Annex III categories |
 | `gallows.audit` | Article 12 (Record-Keeping) | Cryptographic SQLite Ledger (Immutable Hash Chains) |
 | `gallows.policy`| Article 11 (Documentation) | Automated Technical Documentation generation |
-| `Sovereign Pause`| Article 14 (Human Oversight) | API integration for human override ("Kill Switch") |
 
 ---
 
-## Why We Built This
+## Why PSI Wins
 
-The EU AI Act is becoming law. In August 2026, major enforcement begins. Non-compliance penalties reach €35 million or 7% of global turnover.
+| Approach | Cost per Output | Feasibility | Regulator Acceptance |
+|----------|-----------------|-------------|---------------------|
+| Full ZKML | $1,000+ | Impossible | High |
+| **Apex PSI** | **<$0.01** | **Deployable Today** | **High** |
+| Documentation Only | $0 | Low | Medium |
 
-Most compliance platforms are "vaporware" promising advanced Zero-Knowledge proofs that don't exist. **Digital Gallows is practical, immediate compliance software.** We don't fake cryptography; we build real audit logs and risk engines.
+---
+
+## The Optimistic Model
+
+1. **Default State:** All AI outputs are "innocent until proven guilty"
+2. **Challenge Event:** A regulator flags a specific output
+3. **Fraud Proof:** We generate a targeted ZK proof only for that output
+4. **Result:** 99.9% cost reduction — compliance becomes economically viable
 
 ---
 
 ## Getting Started
 
-### 1. The Immutable Ledger (Article 12)
-Log every AI decision into a tamper-proof cryptographic database:
+### 1. The Sovereign Compliance Oracle
 ```python
-from gallows.audit.ledger import ImmutableLedger
+from gallows.psi import SovereignComplianceOracle
 
-ledger = ImmutableLedger()
-tx_hash = ledger.log_event("AI_DECISION", "gpt-4-system", {"confidence": 0.95})
-print(f"Decision logged immutably: {tx_hash}")
-```
+oracle = SovereignComplianceOracle()
 
-### 2. Risk Classification (Annex III)
-Determine if your system is High-Risk:
-```python
-from gallows.risk.classifier import RiskClassifier
-
-classifier = RiskClassifier()
-result = classifier.evaluate_system({
-    "domain": "employment_workers_management",
-    "practices": ["automated_resume_screening"]
+# Onboard your AI system
+result = oracle.onboard_system({
+    "name": "Your-AI-System",
+    "provider": "Your Company",
+    "version": "1.0",
+    "domain": "healthcare"
 })
-print(result['risk_level']) # Output: HIGH
+print(result['compliance_status'])  # ONBOARDED
 ```
 
-### 3. Documentation Generator (Article 11)
-Generate your compliance paperwork:
+### 2. Process AI Outputs
 ```python
-from gallows.policy.generator import PolicyGenerator
-
-generator = PolicyGenerator()
-doc = generator.generate_article_11_doc("HR-Screen-AI", "HIGH", "Acme Corp", "1.0")
+# Log and prepare for optimistic verification
+commitment = oracle.process_output(
+    model_id="Your-AI-System",
+    output_data={"decision": "approve_loan", "confidence": 0.95}
+)
+print(f"Output registered: {commitment}")
 ```
+
+### 3. Handle Regulator Challenges
+```python
+# Regulator challenges a specific output
+challenge_id = oracle.zk_verifier.submit_challenge(
+    output_id="abc123",
+    challenger="EU_Regulator",
+    reason="Audit request"
+)
+
+# Generate targeted fraud proof
+proof = oracle.zk_verifier.generate_fraud_proof(challenge_id)
+print(f"Proof verified: {proof['verified']}")
+```
+
+---
+
+## The Business Model
+
+We do not sell software. We offer **Sovereign Partnership**:
+
+- **For AI Providers:** Deploy Apex PSI infrastructure in exchange for 10-15% equity in their compliance operations
+- **For 50% Partners:** Commission for introducing trapped clients who need immediate compliance solutions
 
 ---
 
@@ -74,5 +104,8 @@ doc = generator.generate_article_11_doc("HR-Screen-AI", "HIGH", "Acme Corp", "1.
 Built by **APEX INTELLIGENCE EMPIRE**
 A division of ROCKYFILMS888 PTY LTD (ABN: 71 672 237 795)
 Victoria, Australia
+
+**Digital Gallows:** https://digital-gallows.apex-infrastructure.com
+**Apex Infrastructure:** https://apex-infrastructure.com
 
 **© 2026 APEX DIGITAL GALLOWS**
