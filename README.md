@@ -6,7 +6,7 @@
 
 ## Vision: Global Compliance Standard
 
-Our mission is to become the world's leading AI compliance infrastructure. Every AI company uses Apex to achieve regulatory compliance without surrendering intellectual property.
+AS WE ARE THE WORLD'S ONE AND ONLY COMPANY TO SOLVE THE AI PARADOX — THE ONLY SOLUTION WHERE REGULATORS GET TRANSPARENCY AND AI COMPANIES KEEP IP.
 
 **Target:** August 2026 — EU AI Act Full Enforcement
 
