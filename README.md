@@ -4,6 +4,14 @@
 
 ---
 
+## Vision: Global Compliance Standard
+
+Our mission is to become the world's leading AI compliance infrastructure. Every AI company uses Apex to achieve regulatory compliance without surrendering intellectual property.
+
+**Target:** August 2026 — EU AI Act Full Enforcement
+
+---
+
 ## What We Do
 
 APEX DIGITAL GALLOWS provides a practical compliance solution for AI systems under the EU AI Act 2026.
@@ -45,6 +53,19 @@ We built the **Proof of Sovereign Integrity (PSI)** — an **Optimistic Complian
 2. **Challenge Event:** A regulator flags a specific output
 3. **Fraud Proof:** We generate targeted verification only for that output
 4. **Result:** 99.9% cost reduction — compliance becomes economically viable
+
+---
+
+## The Three Architecture Pillars
+
+### 1. Policy Compiler (LDSL)
+A Legal Domain-Specific Language that translates ambiguous statutory text into mathematical certainty, allowing courts to ratify ZK-circuits.
+
+### 2. Context Oracle (ZK-Oracle)
+Deployment of ZK-Oracles for provenance-verified, tamper-proof data feeds from real-world sources.
+
+### 3. Commit Layer
+Ensures state mutation is physically impossible unless the proof is verified as valid.
 
 ---
 
