@@ -51,3 +51,4 @@ htmlcov/
 # Node
 node_modules/
 npm-debug.log
+compliance_ledger.db

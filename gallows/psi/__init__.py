@@ -5,12 +5,23 @@ Optimistic ZKML Verification Layer
 This module provides the framework for Optimistic ZK verification.
 In production, this would integrate with ZK libraries (ezkl, circom).
 For now, it provides the interface and placeholder for the fraud-proof system.
+
+Modules:
+- OptimisticZKVerifier: Core ZK verification system
+- MultiSigValidator: Multi-party consensus for predicate validation
+- CryptographicPDFGenerator: Generates regulator-friendly compliance PDFs
+- HotSwapPredicateManager: Modular predicate updates without downtime
 """
 
 from typing import Dict, Any, List, Optional
 import hashlib
 import json
 import time
+
+# Import new modules
+from gallows.psi.multisig import MultiSigValidator
+from gallows.psi.pdf_generator import CryptographicPDFGenerator
+from gallows.psi.hotswap import HotSwapPredicateManager
 
 class OptimisticZKVerifier:
     """
@@ -108,7 +119,8 @@ class OptimisticZKVerifier:
 class SovereignComplianceOracle:
     """
     The main interface for AI companies to achieve compliance.
-    Combines Ledger, Risk Classifier, Policy Generator, and ZK Verification.
+    Combines Ledger, Risk Classifier, Policy Generator, ZK Verification,
+    Multi-Sig Validation, PDF Generation, and Hot-Swapping.
     """
     
     def __init__(self):
@@ -120,6 +132,11 @@ class SovereignComplianceOracle:
         self.risk_classifier = RiskClassifier()
         self.policy_generator = PolicyGenerator()
         self.zk_verifier = OptimisticZKVerifier()
+        
+        # New modules
+        self.multisig = MultiSigValidator()
+        self.pdf_generator = CryptographicPDFGenerator()
+        self.predicate_manager = HotSwapPredicateManager()
         
     def onboard_system(self, system_profile: Dict[str, Any]) -> Dict[str, Any]:
         """
